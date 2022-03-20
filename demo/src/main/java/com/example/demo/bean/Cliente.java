@@ -1,14 +1,36 @@
 package com.example.demo.bean;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Cliente {
 
+    @NotNull
+    @Size(min=2, max=30)
     private String nombre;
+    @NotNull
+    @Size(min=2, max=30)
     private String apellido;
+    @NotNull
+    @Email
     private String email;
+    @NotNull
     private String cumpleaños;
+    @NotNull
+    @Max(value=9)
+    @Min(value=9)
     private String dni;
+    @Digits(fraction = 0, integer = 10)
     private Integer edad;
+    @NotNull
+    @Size(min=2, max=30)
     private String contraseña;
+    @NotNull
+    @Size(min=2, max=30)
     private String contraseña2;
 
     public Cliente(String nombre, String apellido, String email, String cumpleaños, String dni, Integer edad, String contraseña, String contraseña2) {

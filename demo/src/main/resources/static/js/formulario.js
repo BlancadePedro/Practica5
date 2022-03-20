@@ -46,13 +46,14 @@ submitbtn.addEventListener("click",
         error.innerHTML = text;
         return false;
       }
-      alert("Su información se ha enviado, muchas gracias!");
+      error.innerHTML = null;
 
       let request = await fetch("/clientesPOST", {
           method : "POST",
           credentials: "same-origin", 
           headers: { 
             "Content-Type": "application/json"
+            
           },
           body: JSON.stringify({
               nombre : nombreI,
@@ -66,12 +67,12 @@ submitbtn.addEventListener("click",
 
           }),
           dataType: "json"
-    });
+    }).catch(console.error);
 
   if(request.ok) {
       console.log("Success!");
-
     }
+
 
   let get = await fetch("/clientesGET", {
       method: "GET",
