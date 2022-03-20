@@ -12,7 +12,7 @@ Un usuario ingresará por pantalla sus datos personales para el registro de la a
 
 # Especificaciones/Extras de la práctica
 
--El desarrollo de la práctica se ha realizado en la página "Register.html", que se puede encontrar en "pages"
--Se han utilizado los métodos POST y GET para obtener la información e imprimirla por pantalla cuando el usuario pulse el botón de registrarse. 
--Se ha reutilizado la validación implementada en las prácticas anteriores de Javascript, añadiendola también en el lado del servidor, mediante la validación de Springboot en la clase "Cliente.java"
--Se ha añadido un actuador para verificar el estado de la página. Para ello se podrá acceder mediante "localhost:8080/actuator" y los archivos correspondintes se encuentran en la carpeta actuador
+- El desarrollo de la práctica se ha realizado en la página "Register.html", que se puede encontrar en "pages"
+- Se han utilizado los métodos POST y GET para obtener la información e imprimirla por pantalla cuando el usuario pulse el botón de registrarse. 
+- Se ha reutilizado la validación implementada en las prácticas anteriores de Javascript, añadiendola también en el lado del servidor, mediante la validación de Springboot en la clase "Cliente.java"
+- Se ha añadido un actuador para verificar el estado de la página. Para ello se podrá acceder mediante "localhost:8080/actuator" y los archivos correspondintes se encuentran en la carpeta actuador
