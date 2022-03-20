@@ -1,6 +1,6 @@
 # Practica5 ~ Desarrollo de API REST con Spring Boot
 
-[!(https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlancadePedro/Practica5)
+[![](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlancadePedro/Practica5)
 
 # Objetivos de la práctica
 
